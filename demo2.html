@@ -10,16 +10,18 @@
     <h2>Math Power</h2>
     <p id="total"></p>
     <p id="burhan"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <h1>replace</h1>
+     <button onclick="myFunction()">Try it</button>
+     <p id="demo">Hello World</p>
     
  
     <script>
-         let x;
-         x=5;
-         x="Burhan";
-         
-         document.getElementById("total").innerHTML=x;
-
-
+        function myFunction(){
+            let text=document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=text.toLowerCase();
+        }
     </script>
 </body>
 </html>
