@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        const fruit=["shaptul","Oruk","Alma","Uzum"];
+        document.getElementById("demo1").innerHTML=fruit;
+        fruit.pop();
+        document.getElementById("demo2").innerHTML=fruit;
+        fruit.pop();
+        document.getElementById("demo3").innerHTML=fruit;
+        fruit.push("alma,uzum");
+        document.getElementById("demo4").innerHTML=fruit;
+        fruit.push("Anar,Eynola");
+        document.getElementById("demo5").innerHTML=fruit;
+        
+    </script>
+</body>
+</html>
