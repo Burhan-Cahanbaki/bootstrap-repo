@@ -7,16 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+
     <p id="demo"></p>
-    <p id="demo2"></p>
     <script>
-        const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-
+        const days=["Sunday","Monday","Wednesday","Thursday","Friday","Saturday"];
         const d=new Date("2022-11-17");
-        let month=months[d.getDate()];
-
-        document.getElementById("demo").innerHTML=d.getMilliseconds();
-        document.getElementById("demo2").innerHTML=month;
+        let day=days[d.getDay()];
+        document.getElementById("demo").innerHTML=day;
     </script>
+    
 </body>
 </html>
