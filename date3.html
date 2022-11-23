@@ -10,10 +10,13 @@
 
     <p id="demo"></p>
     <script>
-        const days=["Sunday","Monday","Wednesday","Thursday","Friday","Saturday"];
-        const d=new Date("2022-11-17");
-        let day=days[d.getDay()];
-        document.getElementById("demo").innerHTML=day;
+        const d=new Date();
+        d.setDate(d.getDate()+50);
+        d.setHours(23);
+        d.setMinutes(30);
+        d.setSeconds(45);
+
+        document.getElementById("demo").innerHTML=d;
     </script>
     
 </body>
