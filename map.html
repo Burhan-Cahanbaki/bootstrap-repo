@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <hr>
+    <p id="demo4"></p>
+    
+    <script>
+        const fruits=new Map([
+            ["Apple",500],
+            ["Banana",400],
+            ["Orange",345]
+        ]
+
+        )
+        fruits.set("anar",300);
+        fruits.set("Oruk",500);
+        fruits.set("tavuz",600);
+        fruits.delete("Apple");
+        document.getElementById("demo").innerHTML=fruits.get("Apple");
+        document.getElementById("demo1").innerHTML=fruits.get("Banana");
+        document.getElementById("demo2").innerHTML=fruits.has("Shaptul");
+        let text="";
+        fruits.forEach(function(value,key){
+            text+=key+" = "+value+"<br>";
+        })
+
+        document.getElementById("demo3").innerHTML=text;
+        
+        let text1="";
+        for(const x of fruits.entries()){
+            text1+=x+"<br>";
+
+        }
+        document.getElementById("demo").innerHTML=text1;
+
+    </script>
+</body>
+</html>
