@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+     <p id="demo4"></p>
+     <p id="demo5"></p>
+    <script>
+        document.getElementById("demo").innerHTML=Number("98")+"<br>"+Number(Math.PI)+"<br>"+Number(" ")+"<br>"+Number("")+"<br>"+Number(" 32")+"<br>"+Number("Burhan");
+
+        let y="Burhan";
+        let x= + y;
+        document.getElementById("demo1").innerHTML=typeof y+"<br>"+typeof x;
+        let s1=123;
+        document.getElementById("demo2").innerHTML=String(s1)+"<br>"+String(123)+"<br>"+String(100+45)
+        document.getElementById("demo3").innerHTML=s1.toString+(123).toString+"<br>"+(100+45).toString;
+        d=new Date();
+        document.getElementById("demo4").innerHTML=Number(false);
+        document.getElementById("demo5").innerHTML=Number(true);
+    </script>
+</body>
+</html>
