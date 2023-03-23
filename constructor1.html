@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        function Person(first,last,age,eye){
+            this.firstName=first;
+            this.lastName=last;
+            this.age=age;
+            this.eyeColor=eye;
+            //this.nationality="Uyghur";
+        }
+        Person.prototype.name=function(){
+            return this.firstName+" "+this.lastName
+        };
+        const myFather=new Person("Habibullah","Ahmet",58,"Black");
+        const myMother=new Person("Meryem","Ahmet",55,"Black");
+        document.getElementById("demo2").innerHTML="My father is "+myFather.name();
+        document.getElementById("demo").innerHTML="The Nationality of My father is "+myFather.nationality;
+    </script>
+</body>
+</html>
